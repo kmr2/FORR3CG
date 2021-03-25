@@ -36,7 +36,7 @@ void vixla(int& a, int& b) { // int& reference MUNA
   b = temp;
 }
 
-int main() {
+int main213123() {
   /*
     unsigned short mini_tala = -1; // -1 unsigned gerir stæsrstu tölu
     int heiltala = 42;
