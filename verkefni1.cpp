@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main() {
+int main3() {
 
   int val;
   cout << "Talnakerfisbryetir\n";
@@ -22,7 +22,7 @@ cout << "1 - Breyta í tvíundakerfið\n" <<
     case 1:
       cout << "Sláðu inn tugakerfistölu: ";
       cin >> tala;
-      cout << "Tugakerfistalan " << tala << " er " << bitset<16>(tala) << " í tvíundakerfinu\n";
+      cout << "Tugakerfistalan " << tala << " er " << bitset<32>(tala) << " í tvíundakerfinu\n";
       cout << dec;
       break;
 
@@ -47,9 +47,5 @@ cout << "1 - Breyta í tvíundakerfið\n" <<
   }
 
   }while(j!=0);
-
-
-  
-
 return 0;
 }
