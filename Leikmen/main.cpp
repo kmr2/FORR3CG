@@ -13,21 +13,15 @@ int main() {
     leikmenn[2] = Leikmenn("Karl Vignir",20,3,5);
     leikmenn[3] = Leikmenn("Svavar Svanni",24,15,9);
     leikmenn[4] = Leikmenn("Gamli kalin",70,80,25);
-
+    int summa = 0;
     int staerd = sizeof(leikmenn)/sizeof(*leikmenn);
     for(int i = 0; i < staerd; i++) {
         leikmenn[i].prenta();
+        summa += leikmenn[i].getLeikir();
     }
+    std::cout << "-----------------------------" << std::endl;
 
-    /*
-    Bill bilar[3];
-    Bill b(20,"BMW","Grænn");
-    bilar[0] = b;
-    bilar[1] = Bill(25, "Toyota", "Gul");
-    bilar[2] = Bill(35,"Benz","Grár");
-    for(int i = 0; i < 3; i++) {
-        bilar[i].prenta();
-    }
-    */
+    std::cout << "Meðaltal alla leikmennina er " << std::fixed << std::setprecision(2) << summa/(float)staerd << std::endl;
+
   return 0; 
 }
