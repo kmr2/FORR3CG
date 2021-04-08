@@ -6,7 +6,7 @@
 
 
 
-int main() {
+int main899898() {
     Leikmenn leikmenn[5];
     leikmenn[0] = Leikmenn("Stjáni Blái",29,5,2);
     leikmenn[1] = Leikmenn("Rikki Littli",12,1,1);
